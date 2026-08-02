@@ -35,8 +35,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "118ddd91-bcf9-4fe9-b4c1-1d8dbfc8af5b",
             "zIndex": -1,
+            "id": "118ddd91-bcf9-4fe9-b4c1-1d8dbfc8af5b",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Internet / Untrusted Zone",
@@ -69,16 +69,16 @@
             },
             "attrs": {
               "label": {
-                "text": "Internet / Untrusted Zone"
+                "text": "Internal Trusted Network"
               }
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "359965f7-2b13-4d44-9b96-59a0c82d41bb",
             "zIndex": -1,
+            "id": "359965f7-2b13-4d44-9b96-59a0c82d41bb",
             "data": {
               "type": "tm.BoundaryBox",
-              "name": "Internet / Untrusted Zone",
+              "name": "Internal Trusted Network",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
