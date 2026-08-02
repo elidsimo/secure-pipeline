@@ -49,13 +49,6 @@
               "containedElements": [
                 "12ee0396-1785-4b6c-ae0c-b9af50a56301"
               ]
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -457,7 +450,7 @@
           },
           {
             "position": {
-              "x": 460,
+              "x": 407.5,
               "y": 380
             },
             "size": {
