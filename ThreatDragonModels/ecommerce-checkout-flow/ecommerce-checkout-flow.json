@@ -12,7 +12,7 @@
     "contributors": [],
     "diagrams": [
       {
-        "id": 0,
+        "id": 3,
         "title": "checkout-flow",
         "diagramType": "STRIDE",
         "placeholder": "New STRIDE diagram description",
@@ -21,7 +21,7 @@
         "cells": []
       }
     ],
-    "diagramTop": 2,
+    "diagramTop": 5,
     "reviewer": "",
     "threatTop": 0
   }
