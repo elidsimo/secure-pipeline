@@ -1,0 +1,10 @@
+# Format : chemin  @propriétaire
+
+# Tout ce qui touche à l'authentification, aux paiements ou aux secrets
+# nécessite une revue obligatoire
+/src/routes/auth*        @elidsimo
+/src/routes/payment*      @elidsimo
+/src/middlewares/         @elidsimo
+.env.example              @elidsimo
+.pre-commit-config.yaml   @elidsimo
+/.github/                 @elidsimo
