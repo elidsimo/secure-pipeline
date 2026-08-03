@@ -1,0 +1,11 @@
+rules:
+  - id: no-payment-data-in-logs
+    languages: [javascript]
+    severity: ERROR
+    message: >
+      Ne jamais logger le corps complet d'une requête sur une route de paiement
+      (voir Security Requirement SR-003, Guide 1 threat model).
+    patterns:
+      - pattern: console.log(req.body)
+      - pattern-inside: |
+          app.$METHOD("/payment$...", ($REQ, $RES) => { ... })
