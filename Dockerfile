@@ -1,4 +1,4 @@
-# builder — installe les dépendances avec npm
+#  builder — installe les dépendances avec npm
 FROM node:20-alpine AS builder
 
 WORKDIR /app
@@ -8,8 +8,11 @@ RUN npm ci --omit=dev
 
 COPY src/ ./src/
 
+# image finale — sans le CLI npm
 FROM node:20-alpine
 
+# Mettre à jour les paquets systeme Alpine (corrige les CVE OS déjà patchées,
+# comme libcrypto3/libssl3 CVE-2026-45447)
 RUN apk update && apk upgrade --no-cache
 
 WORKDIR /app
