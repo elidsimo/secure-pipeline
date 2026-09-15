@@ -45,8 +45,13 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Rebuild native dependencies (better-sqlite3)
-        run: npm rebuild better-sqlite3 --build-from-source
+      - name: Rebuild native dependencies
+        run: npm rebuild --build-from-source
+
+      - name: Diagnostic - test chargement des modules natifs un par un
+        run: |
+          node -e "console.log('test bcrypt...'); require('bcrypt'); console.log('bcrypt OK')"
+          node -e "console.log('test better-sqlite3...'); require('better-sqlite3'); console.log('better-sqlite3 OK')"
 
       - name: Run tests
         run: npm test
