@@ -1,5 +1,8 @@
-#  builder — installe les dépendances avec npm
+# --- Etape 1 : builder ---
 FROM node:20-alpine AS builder
+
+# Outils necessaires pour compiler les dependances natives (better-sqlite3)
+RUN apk add --no-cache python3 make g++
 
 WORKDIR /app
 
@@ -7,7 +10,6 @@ COPY package*.json ./
 RUN npm ci --omit=dev
 
 COPY src/ ./src/
-
 # image finale — sans le CLI npm
 FROM node:20-alpine
 
